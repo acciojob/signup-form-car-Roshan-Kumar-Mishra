@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	 <form>
+	 <form method="post">
       <label for="name">Name: </label>
       <input type="text" placeholder="Name" id="name" required />
       <br />
@@ -17,12 +17,13 @@
       <br />
       <label for="Gender">Gender: </label>
       <label for="Gender">
-        <input type="radio" value="M" name="class" id="Gender" />Male
-        <input type="radio" value="F" name="class" id="Gender" />Female
+        <input type="radio" value="M" name="Gender" id="gender_m" />Male
+        <input type="radio" value="F" name="Gender" id="gender_f" />Female
       </label>
       <br />
-      <label for="cars">Cars Brand :-</label>
+      <label for="cars">Cars Brand:-</label>
       <select name="car brand" placeholder="please choose an option" id="cars" required>
+		 <option value="">--please choose an option--</option>  
         <option value="Auddi">1. Auddi</option>
         <option value="Tata">2. Tata</option>
         <option value="Toyata">3. Toyata</option>
@@ -39,12 +40,12 @@
       <input type="tel" placeholder="XXX-XXX-XXXX" id="tel" />
       <br />
       <label for="password">Password</label>
-      <input type="password" placeholder="Password" id="password" required />
+      <input type="password" placeholder="Password" id="password" required/>
       <br />
       <label for="tos">I agree to the TOS</label>
       <input type="checkbox" id="tos" required />
       <br>
-<!--       <input type="submit" placeholder="Submit"> -->
+      <button type="submit" placeholder="Submit">
     </form>
     <script type="text/javascript" src="./script.js">
 </script>
